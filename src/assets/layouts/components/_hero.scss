@@ -1,0 +1,16 @@
+.hero {
+  &__text {
+    max-width: 90rem;
+    font-size: 7rem;
+    line-height: 7.2rem;
+    font-weight: var(--font-weight-semi-bold);
+    margin-bottom: 7.1rem;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    max-width: 136.6rem;
+    margin: 0 auto;
+  }
+}

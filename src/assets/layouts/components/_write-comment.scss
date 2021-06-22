@@ -1,0 +1,97 @@
+.write-comment {
+  width: 100%;
+  max-width: 136.6rem;
+  margin: 0 auto;
+  padding: 14rem 0 14.7rem 0;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  &__heading {
+    position: relative;
+    max-width: 23.5rem;
+    line-height: 5rem;
+    font-size: 5.5rem;
+    font-weight: var(--font-weight-semi-bold);
+  }
+
+  &__heading::after {
+    content: '';
+    position: absolute;
+    left: 1px;
+    bottom: -3.5rem;
+    width: 7rem;
+    height: 5px;
+    background-color: var(--color-yellow);
+  }
+
+  &__form {
+    flex: 0 1 59.2rem;
+  }
+
+  &__input {
+    input {
+      width: 100%;
+      height: 5.5rem;
+      border: var(--form-border);
+      border-radius: 3px;
+      background: var(--color-dark);
+      margin-bottom: 1.5rem;
+
+      font-size: 1.6rem;
+      font-weight: var(--font-weight-regular);
+      color: var(--color-light-green);
+      text-indent: 2rem;
+
+      &::placeholder {
+        font-size: inherit;
+        font-weight: inherit;
+        color: inherit;
+        text-indent: inherit;
+      }
+    }
+  }
+
+  &__textarea {
+    textarea {
+      width: 100%;
+      height: 15rem;
+      border: var(--form-border);
+      background: var(--color-dark);
+      margin-bottom: 0.5rem;
+      resize: none;
+
+      font-size: 1.6rem;
+      font-weight: var(--font-weight-regular);
+      color: var(--color-light-green);
+      text-indent: 2rem;
+      padding-top: 1.7rem;
+
+      &::placeholder {
+        font-size: inherit;
+        font-weight: inherit;
+        color: inherit;
+        text-indent: inherit;
+      }
+    }
+  }
+
+  &__btn {
+    display: block;
+    padding: 1.9rem 5.7rem;
+    background-color: var(--color-light-green);
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+
+    font-size: 1.6rem;
+    font-weight: var(--font-weight-regular);
+    color: var(--color-primary);
+  }
+}
